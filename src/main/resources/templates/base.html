@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head  th:fragment="headerFragment (pageTitle)">
+  <title th:text="${pageTitle}">Template title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title th:fragment="base_title">this base page</title> -->
+</head>
+<body>
+  <div class="header_base" th:fragment="myheader(x)">
+    <span th:text="${x}"></span>
+  </div>
+</body>
+</html>
